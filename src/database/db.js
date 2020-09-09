@@ -11,7 +11,7 @@ db.serialize(()=>{
         Url TEXT );`
         )
 
-    const query = ` INSERT INTO Woman(
+const query = ` INSERT INTO Woman(
         Name,
         Description,
         Url) VALUES (?,?,?);`

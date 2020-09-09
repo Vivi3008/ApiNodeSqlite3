@@ -25,7 +25,7 @@ module.exports = {
 
     db.run(query,values, err=>{
         if (err)  console.error('Erro ao inserir', err)  
-         return res.send('Dados inseridos') 
+        return res.send('Dados inseridos') 
     })     
 },
 //mostrando os dados pelo id
