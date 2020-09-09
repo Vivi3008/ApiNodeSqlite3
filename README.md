@@ -7,6 +7,7 @@ Formato dos dados: nome, descrição e url.
 * Nodejs
 * Express
 * Sqlite3
+* Insominia (para testar as rotas)
 * Arquitetura MVC (apesar de ser uma aplicação pequena é sempre bom colocar em prática)
 
 Post feito no notion do passo a passo do desenvolvimento. 	:point_down:
