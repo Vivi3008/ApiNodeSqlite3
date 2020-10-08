@@ -22,6 +22,7 @@ const query = ` INSERT INTO Woman(
      'https://pt.wikipedia.org/wiki/Ada_Lovelace'
     ]
 
+  /*  db.run(`ALTER TABLE Woman ADD COLUMN ImgUrl TEXT`)  */
    /*  //INSERINDO DADOS NA TABELA
      db.run(query,values, err=>{
         if (err) return console.log(err)
@@ -29,10 +30,11 @@ const query = ` INSERT INTO Woman(
         console.log(this)
      })  */
     
- /*     db.all(`SELECT * FROM Woman`, (err, rows)=>{
+/*    db.all(`SELECT * FROM Woman`, (err, rows)=>{
         if (err) return console.log(err)
         console.log(rows)
-     }) */
+     }) 
+ */
 
     })
 

@@ -7,13 +7,15 @@ Formato dos dados: nome, descrição e url.
 * Nodejs
 * Express
 * Sqlite3
-* Insominia (para testar as rotas)
+* Insomnia (para testar as rotas)
 * Arquitetura MVC (apesar de ser uma aplicação pequena é sempre bom colocar em prática)
 
 Post feito no notion do passo a passo do desenvolvimento. 	:point_down:
 [Documentação no Notion](https://www.notion.so/viviramos/API-Rest-NodeJs-com-Express-e-Sqlite3-995a19b504c343a5990baacb14da3502)
 
-## Author 
-:woman_technologist: **ViviRamos**
+## Usage
+npm run dev
 
-[*LinkedIn*](https://linkedin.com/in/viviane-ramos-luz)
+## Author 
+:woman_technologist: [**ViviRamos**](https://linkedin.com/in/viviane-ramos-luz)
+

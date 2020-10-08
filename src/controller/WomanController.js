@@ -4,10 +4,14 @@ const db = require('../database/db')
 module.exports = {
     //mostrar os dados
      index(req,res){
-
+         const page = req.params.page
+         const pg = page==1 ? 0 : 5
+        //PAGINAÇÃO COM 5 DADOS A PARTIR DO PRIMEIRO 
+        /* LIMIT 5 OFFSET ${pg} */
         db.all(`SELECT * FROM Woman`, (err, rows)=>{
             if (err) return console.log(err)
             return res.send(rows)
+              
          }) 
 },
     //inserir dados na tabela
@@ -20,7 +24,7 @@ module.exports = {
         const values = [
             req.body.name,
             req.body.description,
-            req.body.url
+            req.body.url,
         ]
 
     db.run(query,values, err=>{
@@ -31,7 +35,7 @@ module.exports = {
 //mostrando os dados pelo id
     showById(req, res){
         const id = req.params.id
-
+        
         db.all(`SELECT * FROM Woman WHERE id=?`, [id], (err, rows)=>{
             if (err) return console.log(err)
             return res.send(rows)
